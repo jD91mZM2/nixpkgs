@@ -3817,6 +3817,8 @@ in
     tinyxml2 = tinyxml-2;
   };
 
+  enroot = callPackage ../tools/system/enroot { };
+
   enscript = callPackage ../tools/text/enscript { };
 
   ensemble-chorus = callPackage ../applications/audio/ensemble-chorus { stdenv = gcc8Stdenv; };
